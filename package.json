@@ -1,5 +1,5 @@
 {
-  "name": "chocolat",
+  "name": "chocolat-starfish",
   "version": "0.4.18",
   "description": " Responsive jQuery Lightbox Plugin",
   "main": "dist/js/jquery.chocolat.js",
