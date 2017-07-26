@@ -1,4 +1,6 @@
-﻿(function (factory) {
+;﻿(function (factory) {
+    'use strict';
+
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], factory);
     } else if (typeof exports !== 'undefined') {
@@ -7,6 +9,8 @@
         factory(jQuery);
     }
 }(function($) {
+    'use strict';
+
     var calls = 0;
 
     function Chocolat(element, settings) {
