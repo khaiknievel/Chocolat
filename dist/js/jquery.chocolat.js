@@ -1,10 +1,16 @@
-(function (factory) {
-    if(typeof module === "object" && typeof module.exports === "object") {
-        module.exports = factory(require("jquery"), window, document);
+;﻿(function (factory) {
+    'use strict';
+
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else if (typeof exports !== 'undefined') {
+        module.exports = factory(require('jquery'));
     } else {
-        factory(jQuery, window, document);
+        factory(jQuery);
     }
-}(function($, window, document, undefined) {
+}(function($) {
+    'use strict';
+
     var calls = 0;
 
     function Chocolat(element, settings) {
