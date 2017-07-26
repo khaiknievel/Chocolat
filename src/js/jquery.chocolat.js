@@ -1,12 +1,10 @@
-;﻿(function (factory) {
-  'use strict';
+﻿(function (factory) {
     if(typeof module === "object" && typeof module.exports === "object") {
         module.exports = factory(require("jquery"), window, document);
     } else {
         factory(jQuery, window, document);
     }
-}(function($, window, document, undefined) {
-    'use strict';
+}(function($) {
     var calls = 0;
 
     function Chocolat(element, settings) {
