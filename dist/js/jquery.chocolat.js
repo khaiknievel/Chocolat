@@ -727,8 +727,6 @@
         zoomedPaddingY    : function (canvasHeight, imgHeight) { return 0; },
     };
 
-    console.log($);
-
     $.fn.Chocolat = function (options) {
         return this.each(function() {
 
